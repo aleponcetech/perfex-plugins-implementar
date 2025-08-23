@@ -197,12 +197,10 @@ export const ROICalculator = () => {
                     <div className="flex-1">
                       <h3 className="font-medium text-sm">{plugin.name}</h3>
                       <div className="flex gap-1 mt-1">
-                        <Badge size="sm" variant="outline">
+                        <Badge variant="outline">
                           {plugin.priority}
                         </Badge>
-                        <Badge size="sm" variant="outline">
-                          {plugin.categoryName}
-                        </Badge>
+                        <Badge variant="outline">{plugin.categoryName}</Badge>
                       </div>
                     </div>
                     <div className="text-xs text-muted-foreground">
@@ -288,3 +286,5 @@ export const ROICalculator = () => {
     </div>
   );
 };
+
+export default ROICalculator;

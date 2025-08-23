@@ -142,7 +142,7 @@ export const Timeline = () => {
                             <h3 className={`font-semibold ${plugin.completed ? 'line-through text-muted-foreground' : ''}`}>
                               {plugin.name}
                             </h3>
-                            <Badge variant="outline" size="sm">
+                            <Badge variant="outline">
                               {plugin.categoryName}
                             </Badge>
                           </div>
@@ -151,17 +151,17 @@ export const Timeline = () => {
                           </p>
                           <div className="flex gap-2">
                             {plugin.cost && (
-                              <Badge variant="outline" size="sm">
+                              <Badge variant="outline">
                                 Custo: {plugin.cost}
                               </Badge>
                             )}
                             {plugin.setupTime && (
-                              <Badge variant="outline" size="sm">
+                              <Badge variant="outline">
                                 Setup: {plugin.setupTime}
                               </Badge>
                             )}
                             {plugin.roi && (
-                              <Badge variant="outline" size="sm">
+                              <Badge variant="outline">
                                 ROI: {plugin.roi}
                               </Badge>
                             )}
@@ -189,3 +189,5 @@ export const Timeline = () => {
     </div>
   );
 };
+
+export default Timeline;
