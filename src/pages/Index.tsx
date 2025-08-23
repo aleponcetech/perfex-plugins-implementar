@@ -50,17 +50,17 @@ const Index = () => {
           <div className="bg-gradient-secondary rounded-lg p-6 max-w-4xl mx-auto">
             <h3 className="text-xl font-semibold mb-4">Sugestão de Implementação</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-              <div className="bg-success/10 border border-success/20 rounded-lg p-4">
-                <h4 className="font-semibold text-success mb-2">Fase 1 - Fundação</h4>
-                <p className="text-muted-foreground">Foque nos plugins de prioridade ALTA primeiro</p>
+              <div className="bg-success rounded-lg p-4">
+                <h4 className="font-semibold text-white mb-2">Fase 1 - Fundação</h4>
+                <p className="text-white/90">Foque nos plugins de prioridade ALTA primeiro</p>
               </div>
-              <div className="bg-warning/10 border border-warning/20 rounded-lg p-4">
-                <h4 className="font-semibold text-warning mb-2">Fase 2 - Otimização</h4>
-                <p className="text-muted-foreground">Avance para os de prioridade MÉDIA</p>
+              <div className="bg-warning rounded-lg p-4">
+                <h4 className="font-semibold text-white mb-2">Fase 2 - Otimização</h4>
+                <p className="text-white/90">Avance para os de prioridade MÉDIA</p>
               </div>
-              <div className="bg-info/10 border border-info/20 rounded-lg p-4">
-                <h4 className="font-semibold text-info mb-2">Fase 3 - Refinamento</h4>
-                <p className="text-muted-foreground">Por último, analise os de prioridade BAIXA</p>
+              <div className="bg-info rounded-lg p-4">
+                <h4 className="font-semibold text-white mb-2">Fase 3 - Refinamento</h4>
+                <p className="text-white/90">Por último, analise os de prioridade BAIXA</p>
               </div>
             </div>
           </div>
