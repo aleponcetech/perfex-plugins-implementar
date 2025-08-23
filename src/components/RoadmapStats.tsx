@@ -42,58 +42,58 @@ export const RoadmapStats = ({ categories }: RoadmapStatsProps) => {
       </Card>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Card className="p-4 bg-gradient-success bg-opacity-10 border-success/20">
+        <Card className="p-4 bg-gradient-success border-success/20">
           <div className="flex items-center gap-3 mb-3">
-            <AlertTriangle className="w-5 h-5 text-success" />
-            <h3 className="font-semibold text-success">Prioridade ALTA</h3>
+            <AlertTriangle className="w-5 h-5 text-white" />
+            <h3 className="font-semibold text-white">Prioridade ALTA</h3>
           </div>
           <div className="space-y-2">
             <div className="flex justify-between items-center">
-              <span className="text-sm text-muted-foreground">Progresso</span>
-              <Badge variant="outline" className="bg-success/20 text-success border-success/30">
+              <span className="text-sm text-white/80">Progresso</span>
+              <Badge variant="outline" className="bg-white/20 text-white border-white/30">
                 {completedHighPriority}/{highPriorityPlugins.length}
               </Badge>
             </div>
             <Progress value={highPriorityProgress} className="h-2" />
-            <p className="text-xs text-muted-foreground">
+            <p className="text-xs text-white/80">
               {Math.round(highPriorityProgress)}% concluído
             </p>
           </div>
         </Card>
 
-        <Card className="p-4 bg-gradient-warning bg-opacity-10 border-warning/20">
+        <Card className="p-4 bg-gradient-warning border-warning/20">
           <div className="flex items-center gap-3 mb-3">
-            <Clock className="w-5 h-5 text-warning" />
-            <h3 className="font-semibold text-warning">Prioridade MÉDIA</h3>
+            <Clock className="w-5 h-5 text-white" />
+            <h3 className="font-semibold text-white">Prioridade MÉDIA</h3>
           </div>
           <div className="space-y-2">
             <div className="flex justify-between items-center">
-              <span className="text-sm text-muted-foreground">Progresso</span>
-              <Badge variant="outline" className="bg-warning/20 text-warning border-warning/30">
+              <span className="text-sm text-white/80">Progresso</span>
+              <Badge variant="outline" className="bg-white/20 text-white border-white/30">
                 {completedMediumPriority}/{mediumPriorityPlugins.length}
               </Badge>
             </div>
             <Progress value={mediumPriorityProgress} className="h-2" />
-            <p className="text-xs text-muted-foreground">
+            <p className="text-xs text-white/80">
               {Math.round(mediumPriorityProgress)}% concluído
             </p>
           </div>
         </Card>
 
-        <Card className="p-4 bg-info bg-opacity-10 border-info/20">
+        <Card className="p-4 bg-info border-info/20">
           <div className="flex items-center gap-3 mb-3">
-            <CheckCircle2 className="w-5 h-5 text-info" />
-            <h3 className="font-semibold text-info">Prioridade BAIXA</h3>
+            <CheckCircle2 className="w-5 h-5 text-white" />
+            <h3 className="font-semibold text-white">Prioridade BAIXA</h3>
           </div>
           <div className="space-y-2">
             <div className="flex justify-between items-center">
-              <span className="text-sm text-muted-foreground">Progresso</span>
-              <Badge variant="outline" className="bg-info/20 text-info border-info/30">
+              <span className="text-sm text-white/80">Progresso</span>
+              <Badge variant="outline" className="bg-white/20 text-white border-white/30">
                 {completedLowPriority}/{lowPriorityPlugins.length}
               </Badge>
             </div>
             <Progress value={lowPriorityProgress} className="h-2" />
-            <p className="text-xs text-muted-foreground">
+            <p className="text-xs text-white/80">
               {Math.round(lowPriorityProgress)}% concluído
             </p>
           </div>
