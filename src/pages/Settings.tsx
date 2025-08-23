@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Settings as SettingsIcon, Download, Upload, Trash2, Save } from "lucide-react";
+import { Settings as SettingsIcon, Download, Upload, Trash2, Save, AlertTriangle } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -144,6 +144,24 @@ export const Settings = () => {
                   className="cursor-pointer"
                 />
               </div>
+
+              <Button 
+                onClick={() => {
+                  if (confirm('Isso irá restaurar todos os 36 plugins originais distribuídos corretamente por prioridades. Continuar?')) {
+                    resetData();
+                    window.location.reload();
+                    toast({
+                      title: "Dados restaurados",
+                      description: "Todos os plugins foram restaurados com distribuição correta de prioridades.",
+                    });
+                  }
+                }}
+                className="w-full"
+                variant="outline"
+              >
+                <AlertTriangle className="w-4 h-4 mr-2" />
+                Restaurar Plugins Originais
+              </Button>
             </div>
           </Card>
 
