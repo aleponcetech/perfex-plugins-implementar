@@ -21,32 +21,32 @@ export const RoadmapHeader = () => {
       </p>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        <div className="bg-gradient-success bg-opacity-10 border border-success/20 rounded-lg p-4">
+        <div className="bg-gradient-success rounded-lg p-4">
           <div className="flex items-center justify-center mb-2">
-            <Trophy className="w-6 h-6 text-success mr-2" />
-            <span className="font-semibold text-success">ALTA Prioridade</span>
+            <Trophy className="w-6 h-6 text-white mr-2" />
+            <span className="font-semibold text-white">ALTA Prioridade</span>
           </div>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-white/90">
             Essencial para a maioria das empresas. Foco em segurança, finanças e funcionalidades centrais.
           </p>
         </div>
         
-        <div className="bg-gradient-warning bg-opacity-10 border border-warning/20 rounded-lg p-4">
+        <div className="bg-gradient-warning rounded-lg p-4">
           <div className="flex items-center justify-center mb-2">
-            <Target className="w-6 h-6 text-warning mr-2" />
-            <span className="font-semibold text-warning">MÉDIA Prioridade</span>
+            <Target className="w-6 h-6 text-white mr-2" />
+            <span className="font-semibold text-white">MÉDIA Prioridade</span>
           </div>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-white/90">
             Adiciona grande valor e eficiência. Ideal para automação e otimização de processos.
           </p>
         </div>
         
-        <div className="bg-info bg-opacity-10 border border-info/20 rounded-lg p-4">
+        <div className="bg-info rounded-lg p-4">
           <div className="flex items-center justify-center mb-2">
-            <BookOpen className="w-6 h-6 text-info mr-2" />
-            <span className="font-semibold text-info">BAIXA Prioridade</span>
+            <BookOpen className="w-6 h-6 text-white mr-2" />
+            <span className="font-semibold text-white">BAIXA Prioridade</span>
           </div>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-white/90">
             Melhorias de nicho ou estéticas. "Bons de ter" após implementar as prioridades maiores.
           </p>
         </div>
